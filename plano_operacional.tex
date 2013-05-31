@@ -28,9 +28,57 @@ Para tanto, o escritório será composto de 4 mesas para computador, 4 cadeiras,
   
 \section{Processos Operacionais}
   \subsection{Ciclo de desenvolvimento}
+  O desenvolvimento de um determinado conjunto de funcionalidades na plataforma se dará seguindo o seguinte ciclo de desenvolvimento:
+
+  \begin{enumerate}
+    \item Especificação de cada funcionalidade;
+    \item Estimar tempo e valor agregado à plataforma para cada funcionalidade;
+    \item De acordo com as estimativas, definir um conjunto prioritário de funcionalidades que caibam dentro de um período máximo de duas semanas, que será chamado de iteração;
+    \item Para cada funcionalidade definir quais tarefas devem ser completadas para a funcionalidade estar implementada;
+    \item Executar as tarefas, mantendo registro durante a iteração sobre o que já foi feito, o que está sendo feito e o que ainda não foi começado.
+  \end{enumerate}
+
+  Certamente surgirão imprevistos durante este ciclo que serão absorvidos. Caso esta situação se torne frequente, as medidas a serem adotadas são:
+  
+  \begin{itemize}
+    \item Reduzir o tempo da iteração para uma semana;
+    \item Dentro da iteração já reservar certo tempo para trabalhar em imprevistos.
+  \end{itemize}
+  
+  Por fim, este é um processo teórico já consolidado no desenvolvimento ágil, e é apenas uma base sobre a qual a empresa aprimorará o processo de acordo com suas necessidades.
   
   \subsection{Processo de aquisição de infraestrutura computacional}
+  
+  
+  Este item, certamente será revisado assim que a plataforma estiver pronta para lançamento, quando possivelmente alguns dos serviços aqui ilustrados não serão utilizados na realidade e outros não previstos serão utilizados, além da realização de testes de carga que revelarão a real capacidade computacional necessária para esta.
+  
+  Porém, a para fins de ilustrar o processo, um bom ponto inicial sobre os serviços necessários, supondo toda a infraestrutura no Amazon Web Services serão:
+  
+  \begin{itemize}
+    \item Máquinas de processamento, utilizando o serviço EC2;
+    \item Máquinas para banco de dados relacional, utilizando o serviço RDS;
+    \item Espaço para armazenamento de arquivos, utilizando o S3;
+    \item Tráfego de dados;
+  \end{itemize}
+  
+  A capacidade computacional estimada para estes serviços é:
+  
+  \begin{itemize}
+    \item Uma instância EC2 \textit{small} deve suportar em torno de 30 usuários simultâneos;
+    \item Uma instância média de banco de dados no RDS, deve suportar aproximadamente 100 usuários simultâneos;
+    \item Cada usuário gera trafego de aproximadamente 10Mb ao mês;
+  \end{itemize}
+   
+  Desta forma, considerando o conjunto de serviços de infraestrutura necessários para o funcionamento da plataforma e a capacidade de cada um destes testa em testes de carga com a plataforma, será determinado o tamanho da infraestrutura computacional necessária de acordo com a demanda, podem assim crescer ou encolher.
   
   \subsection{Divulgação da plataforma}
   
   \subsection{Suporte a clientes}
+  Para o suporte aos clientes haverá um funcionário da empresa contratado apenas para isto. O processo de atendimento se dará da seguinte forma:
+  
+  \begin{enumerate}
+    \item Primeiro contato via chat online ou e-mail;
+    \item Serão pedidos detalhes ao cliente;
+    \item Caso os detalhes obtidos não sejam suficientes para fornecer uma solução, ou a solução sugerida não tenha sanado a questão, então se iniciará o contato por telefone;
+    \item Caso seja encontrado problema com a plataforma, este deverá ser especificado e com o máximo de informações possível, repassado à equipe de desenvolvimento.
+  \end{enumerate}
