@@ -10,3 +10,4 @@
 *.dvi
 *.fls
 *.synctex.gz
+*.*#
