@@ -3,6 +3,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage{lmodern}
 \usepackage[brazil]{babel}
+\usepackage{color}
 
 \usetheme{JuanLesPins}
 
@@ -148,6 +149,78 @@
   \begin{center}
     {\huge\textbf{Plano Financeiro}}
   \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Demonstrativo de resultados}
+  \framesubtitle{Expectativa para o primeiro ano}
+  
+  \begin{small}
+    \begin{tabular}{| l | l |}
+      \hline
+      \textbf{Descrição} & \textbf{Valor (R\$)}\\ \hline
+      1. Receita total com vendas & \textcolor{green}{130.350,00}\\ \hline \hline
+      2. Custos variáveis totais & \textcolor{red}{113.605,68}\\ \hline
+      (-) Custo das mercadorias vendidas & \textcolor{red}{9.871,00}\\ \hline
+      (-) Impostos sobre vendas & \textcolor{red}{7.734,68} \\ \hline
+      (-) Custos com mão-de-obra & \textcolor{red}{96.000,00} (8.000 X 12)\\ \hline \hline
+      3. Margem de contribuição (1 - 2) & \textcolor{green}{16.764,32}\\ \hline \hline
+      4. (-) Custos fixos totais & \textcolor{red}{15.120,00} (1.260 X 12)\\ \hline \hline 
+      5. Resultado Operacional (Lucro/Prejuízo) (3 – 4) & \textcolor{green}{1.624,32}\\ \hline
+    \end{tabular}
+  \end{small}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Indicadores de viabilidade}
+  \framesubtitle{Ponto de equilíbrio}
+
+  \begin{tabular}{| l | l |}
+    \hline
+    \textbf{Receita total:} & R\$ 130.350,00 \\ \hline
+    \textbf{Custo variável total:} & R\$ 113.605,68 \\ \hline
+    \textbf{Custo fixo total:} & 15.120,00 \\ \hline
+  \end{tabular}
+  
+  \begin{itemize}
+    \item \textbf{Índice da margem de contribuição:} $\frac{130350 - 113605,68}{130350} \cong 0.13$
+    \item \textbf{Ponto de equilíbrio:} $\frac{15120}{0.13} = 116307,69$
+  \end{itemize}
+  
+  Portanto, a empresa estará cobrindo seus custos a partir do momento em que atingir uma receita bruta total de R\$ 116.307,69.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Indicadores de viabilidade}
+  \framesubtitle{Lucratividade}
+  
+  \begin{tabular}{| l | l |}
+    \hline
+    \textbf{Receita total:} & R\$ 130.350,00 \\ \hline
+    \textbf{Lucro líquido:} & R\$ 10.753,75 \\ \hline
+  \end{tabular}
+  
+  .\newline \newline
+  
+  Resultando em uma lucratividade de $\frac{10753,75}{130350} \cong 8\%$.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Indicadores de viabilidade}
+  \framesubtitle{Rentabilidade e prazo de retorno}
+
+  \begin{tabular}{| l | l |}
+    \hline
+    \textbf{Lucro líquido:} & R\$ 10.753,75 \\ \hline
+    \textbf{Investimento total:} & R\$ 10.392,00 \\ \hline
+  \end{tabular}
+  
+  .\newline \newline
+  
+  \begin{itemize}
+    \item Resultando em uma lucratividade de $\frac{10753,75}{10392}*100 \cong 103\%$ ao ano.
+    \item Desta forma recuperando o investimento antes do primeiro ano.
+  \end{itemize}
 \end{frame}
 
 \section{Construção de cenários}
